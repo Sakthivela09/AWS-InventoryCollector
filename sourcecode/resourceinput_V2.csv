@@ -1,21 +1,2 @@
 Service-Name,ResourceType,Command,ResourceId,Tags,TagCommand,TagResourceName,TagLists
-AWS VPC,EC2Vpc,Get-EC2Vpc,VpcId,Tags,,,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS VPC,EC2Subnet,Get-EC2Subnet,SubnetId,Tags,,,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS EC2,EC2SecurityGroup,Get-EC2SecurityGroup,GroupId,Tags,,,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS VPC,EC2NetworkInterface,Get-EC2NetworkInterface,NetworkInterfaceId,TagSet,,,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS EFS,EFSFileSystem,Get-EFSFileSystem,FileSystemId,Tags,,,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS EC2,EC2Volume,Get-EC2Volume,VolumeId,Tags,,,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS EC2,EC2Snapshot,Get-EC2Snapshot -owner self,Snapshotid,Tags,,,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS VPC,EC2NatGateway,Get-EC2NatGateway,NatGatewayId,Tags,,,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS VPC,EC2InternetGateway,Get-EC2InternetGateway,InternetGatewayId,Tags,,,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS VPC,EC2RouteTable,Get-EC2RouteTable,RouteTableId,Tags,,,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS RDS,RDSSDInstance,get-rdsdbinstance,DBInstanceIdentifier,Indirect,get-rdstagforresource -ResourceName,DBInstanceArn,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS RDS,RDSDBSubnetGroup,Get-RDSDBSubnetGroup,DBSubnetGroupName,Indirect,Get-RDSTagForResource -ResourceName,DBSubnetGroupArn,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS RDS,RDSDBCluster,Get-RDSDBCluster,DbClusterResourceId,Indirect,Get-RDSTagForResource -ResourceName,DBClusterArn,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS RDS,RScluster,get-rscluster,ClusterIdentifier ,Tags,,,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS EC2,ELBLoadBalancer,Get-ELBLoadBalancer,LoadBalancerName,Indirect,Get-ELBResourceTag -LoadBalancerName,LoadBalancerName,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS EC2,ELB2LoadBalancer,Get-ELB2LoadBalancer,LoadBalancerName,Indirect,Get-ELB2Tag -ResourceArn,LoadBalancerArn,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS EC2,ELB2TargetGroup,Get-ELB2TargetGroup,TargetGroupName,Indirect,Get-ELB2Tag -ResourceArn,TargetGroupArn,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS EC2,EC2Addres,Get-EC2Address,AssociationId,Tags,,,TAG1 TAG2 TAG3 TAG4 TAG5
 AWS EC2,EC2Instance,Get-EC2Instance,,,,,TAG1 TAG2 TAG3 TAG4 TAG5
-AWS Lamda,Lambda,Get-LMFunctionList,FunctionName,Indirect,Get-LMResourceTag -Resource,FunctionArn,TAG1 TAG2 TAG3 TAG4 TAG5
